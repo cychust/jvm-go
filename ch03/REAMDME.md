@@ -25,3 +25,11 @@ ClassFile{
 
 ```
 
+
+
+Go和Java语言基本数据类型对照关系
+
+![](./images/go_java_data_type.png)
+
+
+
