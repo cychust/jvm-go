@@ -6,8 +6,12 @@ type ConstantPool []ConstantInfo
 
 func readConstantPool(reader *ClassReader) ConstantPool {
 	cpCount := int(reader.readUint16())
+
+	fmt.Printf("cpCount: %d\n", cpCount)
+
 	cp := make([]ConstantInfo, cpCount)
 	for i := 1; i < cpCount; i++ {
+		fmt.Printf("\t%d\n", i)
 		cp[i] = readConstantInfo(reader, cp)
 
 		switch cp[i].(type) {
@@ -39,5 +43,5 @@ func (self ConstantPool) getClassName(index uint16) string {
 
 func (self ConstantPool) getUtf8(index uint16) string {
 	utf8Info := self.getConstantInfo(index).(*ConstantUtf8Info)
-	return utf8Info.str
+	return utf8Info.Str()
 }

@@ -1,5 +1,7 @@
 package classfile
 
+import "fmt"
+
 /*
 CONSTANT_Fieldref_info {
     u1 tag;
@@ -30,6 +32,11 @@ type ConstantMemberrefInfo struct {
 func (self *ConstantMemberrefInfo) readInfo(reader *ClassReader) {
 	self.classIndex = reader.readUint16()
 	self.nameAndTypeIndex = reader.readUint16()
+
+	fmt.Printf("\t\t class_index: %d\n", self.classIndex)
+	fmt.Printf("\t\t name_and_type_index: %d\n", self.nameAndTypeIndex)
+	fmt.Printf("\t}\n")
+
 }
 
 func (self *ConstantMemberrefInfo) ClassName() string {

@@ -1,20 +1,23 @@
 package classfile
 
+import "fmt"
+
 const (
-	CONSTANT_Class              = 7
-	CONSTANT_Fieldref           = 9
-	CONSTANT_Methodref          = 10
-	CONSTANT_InterfaceMethodref = 11
-	CONSTANT_String             = 8
+	CONSTANT_Utf8               = 1
 	CONSTANT_Integer            = 3
 	CONSTANT_Float              = 4
 	CONSTANT_Long               = 5
 	CONSTANT_Double             = 6
+	CONSTANT_Class              = 7
+	CONSTANT_String             = 8
+	CONSTANT_Fieldref           = 9
+	CONSTANT_Methodref          = 10
+	CONSTANT_InterfaceMethodref = 11
 	CONSTANT_NameAndType        = 12
-	CONSTANT_Utf8               = 1
-	CONSTANT_MethodHandle       = 15
-	CONSTANT_MethodType         = 16
-	CONSTANT_InvokeDynamic      = 18
+
+	CONSTANT_MethodHandle  = 15 // JDK1.7 之后
+	CONSTANT_MethodType    = 16
+	CONSTANT_InvokeDynamic = 18
 )
 
 type ConstantInfo interface {
@@ -22,10 +25,30 @@ type ConstantInfo interface {
 }
 
 func readConstantInfo(reader *ClassReader, cp ConstantPool) ConstantInfo {
-	tag := reader.readUint8()
+	tag := reader.readUint8() //tag u1
+	//if tag == CONSTANT_Integer {
+	//	fmt.Print("\t{\n")
+	//	fmt.Printf("\t\ttag: %d\n", tag)
+	//}
+
+	printTag(tag)
+
 	c := newConstantInfo(tag, cp)
 	c.readInfo(reader)
 	return c
+}
+
+func printTag(tag uint8) {
+	switch tag {
+	case CONSTANT_MethodHandle, CONSTANT_MethodType, CONSTANT_InvokeDynamic:
+
+		break
+	default:
+		fmt.Print("\t{\n")
+		fmt.Printf("\t\ttag: %d\n", tag)
+		break
+	}
+
 }
 
 func newConstantInfo(tag uint8, cp ConstantPool) ConstantInfo {

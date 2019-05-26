@@ -5,19 +5,36 @@ import (
 	"unicode/utf16"
 )
 
+/*
+CONSTANT_Utf8_info{
+	u1 tag
+	u2 length
+	u3 bytes   //utf-8缩略编码
+}
+ */
+
 type ConstantUtf8Info struct {
 	str string
 }
 
-func (self ConstantUtf8Info) readInfo(reader *ClassReader) {
+func (self *ConstantUtf8Info) readInfo(reader *ClassReader) {
 	length := uint32(reader.readUint16())
 	bytes := reader.readBytes(length)
 	self.str = decodeMUTF8(bytes)
+
+	fmt.Printf("\t\tlength: %d\n", length)
+	fmt.Printf("\t\tbytes: %s\n", self.str)
+	fmt.Printf("\t}\n")
+
 }
 
 func (self ConstantUtf8Info) Str() string {
 	return self.str
 }
+
+//func decodeMUTF8(bytes []byte) string {
+//	return string(bytes) // not correct!
+//}
 
 //todo why
 //mutf8 -> utf16 -> utf32 ->string
@@ -30,6 +47,7 @@ func decodeMUTF8(bytearr []byte) string {
 	var c, char2, char3 uint16
 	count := 0
 	chararr_count := 0
+
 	for count < utflen {
 		c = uint16(bytearr[count])
 		if c > 127 {
