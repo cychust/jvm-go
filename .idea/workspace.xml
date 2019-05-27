@@ -2,15 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070b6d33-a6b3-4597-ae63-aba8891049d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/frame.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/jvm_stack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/local_vars.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/object.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/operand_stack.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/slot.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch04/rtda/thread.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch04/REAMDME.md" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/REAMDME.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/rtda/frame.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/rtda/frame.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/rtda/jvm_stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/rtda/jvm_stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/rtda/operand_stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/rtda/operand_stack.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ch04/rtda/thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch04/rtda/thread.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,9 +18,16 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/ch04/classfile/attr_exceptions.go">
-          <provider selected="true" editor-type-id="text-editor" />
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/ch04/main.go">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+              <folding>
+                <element signature="e#14#86#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -33,8 +38,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/rtda/thread.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="62">
-              <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+            <state relative-caret-position="209">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
             </state>
           </provider>
         </entry>
@@ -42,8 +47,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/rtda/jvm_stack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="7" selection-start-line="7" selection-end-line="7" />
+            <state relative-caret-position="537">
+              <caret line="47" selection-start-line="47" selection-end-line="47" />
             </state>
           </provider>
         </entry>
@@ -51,8 +56,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/rtda/frame.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="285">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
+            <state relative-caret-position="418">
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
             </state>
           </provider>
         </entry>
@@ -60,18 +65,18 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/rtda/operand_stack.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="537">
+              <caret line="72" selection-start-line="72" selection-end-line="72" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/REAMDME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="403">
-                <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
+              <first_editor relative-caret-position="418">
+                <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
               </first_editor>
               <second_editor />
             </state>
@@ -81,7 +86,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/ch04/rtda/local_vars.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="537">
+            <state relative-caret-position="1050">
               <caret line="57" selection-start-line="57" selection-end-line="57" />
             </state>
           </provider>
@@ -154,15 +159,15 @@
         <option value="$PROJECT_DIR$/ch03/classfile/class_file.go" />
         <option value="$PROJECT_DIR$/ch03/main.go" />
         <option value="$PROJECT_DIR$/ch03/REAMDME.md" />
-        <option value="$PROJECT_DIR$/ch04/main.go" />
-        <option value="$PROJECT_DIR$/ch04/rtda/jvm_stack.go" />
-        <option value="$PROJECT_DIR$/ch04/rtda/thread.go" />
-        <option value="$PROJECT_DIR$/ch04/rtda/frame.go" />
         <option value="$PROJECT_DIR$/ch04/rtda/slot.go" />
         <option value="$PROJECT_DIR$/ch04/rtda/object.go" />
         <option value="$PROJECT_DIR$/ch04/rtda/local_vars.go" />
-        <option value="$PROJECT_DIR$/ch04/rtda/operand_stack.go" />
         <option value="$PROJECT_DIR$/ch04/REAMDME.md" />
+        <option value="$PROJECT_DIR$/ch04/rtda/operand_stack.go" />
+        <option value="$PROJECT_DIR$/ch04/rtda/jvm_stack.go" />
+        <option value="$PROJECT_DIR$/ch04/rtda/frame.go" />
+        <option value="$PROJECT_DIR$/ch04/rtda/thread.go" />
+        <option value="$PROJECT_DIR$/ch04/main.go" />
       </list>
     </option>
   </component>
@@ -260,6 +265,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657082" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -564,23 +570,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ch04/classfile/attr_exceptions.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/ch04/classfile/attr_line_number_table.go">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/rtda/thread.go">
+    <entry file="file://$PROJECT_DIR$/ch04/rtda/slot.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="62">
-          <caret line="9" column="42" selection-start-line="9" selection-start-column="42" selection-end-line="9" selection-end-column="42" />
+        <state relative-caret-position="95">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/REAMDME.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="418">
+            <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ch04/rtda/operand_stack.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="537">
+          <caret line="72" selection-start-line="72" selection-end-line="72" />
         </state>
       </provider>
     </entry>
@@ -591,48 +607,41 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/rtda/slot.go">
+    <entry file="file://$PROJECT_DIR$/ch04/rtda/local_vars.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="1050">
+          <caret line="57" selection-start-line="57" selection-end-line="57" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch04/rtda/jvm_stack.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        <state relative-caret-position="537">
+          <caret line="47" selection-start-line="47" selection-end-line="47" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/ch04/rtda/frame.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        <state relative-caret-position="418">
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/rtda/local_vars.go">
+    <entry file="file://$PROJECT_DIR$/ch04/rtda/thread.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="57" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="209">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/rtda/operand_stack.go">
+    <entry file="file://$PROJECT_DIR$/ch04/main.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ch04/REAMDME.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="403">
-            <caret line="29" column="20" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
-          </first_editor>
-          <second_editor />
+        <state relative-caret-position="480">
+          <caret line="27" column="4" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="e#14#86#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

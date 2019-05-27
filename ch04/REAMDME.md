@@ -12,18 +12,22 @@ public static float circumference(float r){
 javac 编译器编译成字节码：
 
 ```
-00 ldc #4
-02 fstore_1
-03 fconst_2
-04 fload_1
-05 fmul
-06 fload_0
-07 fmul
-08 fstore_2
-09 fload_2
+00 ldc #4     //将int,float或String型常量值从常量池中推送至栈顶
+02 fstore_1   //将栈顶float型数值存入第2个本地变量
+03 fconst_2   //将float型2推送至栈顶
+04 fload_1    //将第二个float型本地变量推送至栈顶
+05 fmul       //将栈顶两float型数值相乘并将结果压入栈顶
+06 fload_0    //将第一个float型本地变量推送至栈顶
+07 fmul       //
+08 fstore_2   //将栈顶float型数值存入第三个本地变量
+09 fload_2    //将第三个float型本地变量推送至栈顶
 10 return
 ```
 
+
+
+
+## 附录 -- JVM字节码指令表
 |字节码|助记符|指令含义|
 |:--:|:--|:----:|
 |字节码|助记符|指令含义|
