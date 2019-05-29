@@ -2,7 +2,10 @@ package main
 
 import (
 	"fmt"
+	"jvm/ch05/classfile"
+	"jvm/ch05/classpath"
 	"jvm/ch05/rtda"
+	"strings"
 )
 
 func main() {
@@ -19,11 +22,43 @@ func main() {
 
 func startJvm(cmd *Cmd) {
 
-	frame := rtda.NewFrame(100, 100)
-	testLocalVars(frame.LocalVars())
-	testOperandStack(frame.OperandStack())
+	cp := classpath.Parse(cmd.XjreOption, cmd.cpOption)
+	className := strings.Replace(cmd.class, ".", "/", -1)
+	cf := loadClass(className, cp)
+	mainMethod := getMainMethod(cf)
+	if mainMethod != nil {
+		interpret(mainMethod)
+	} else {
+		fmt.Printf("Main method not found in class %s\n", cmd.class)
+	}
 
 }
+
+
+func loadClass(className string, cp *classpath.Classpath) *classfile.ClassFile {
+	classData, _, err := cp.ReadClass(className)
+	if err != nil {
+		panic(err)
+	}
+
+	cf, err := classfile.Parse(classData)
+	if err != nil {
+		panic(err)
+	}
+
+	return cf
+}
+
+func getMainMethod(cf *classfile.ClassFile) *classfile.MemberInfo {
+	for _, m := range cf.Methods() {
+		if m.Name() == "main" && m.Descriptor() == "([Ljava/lang/String;)V" {
+			return m
+		}
+	}
+	return nil
+}
+
+
 func testLocalVars(vars rtda.LocalVars) {
 	vars.SetInt(0, 100)
 	vars.SetInt(1, -100)

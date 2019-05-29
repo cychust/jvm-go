@@ -31,7 +31,6 @@ func readConstantInfo(reader *ClassReader, cp ConstantPool) ConstantInfo {
 	//	fmt.Printf("\t\ttag: %d\n", tag)
 	//}
 
-	printTag(tag)
 
 	c := newConstantInfo(tag, cp)
 	c.readInfo(reader)

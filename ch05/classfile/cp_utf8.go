@@ -22,9 +22,6 @@ func (self *ConstantUtf8Info) readInfo(reader *ClassReader) {
 	bytes := reader.readBytes(length)
 	self.str = decodeMUTF8(bytes)
 
-	fmt.Printf("\t\tlength: %d\n", length)
-	fmt.Printf("\t\tbytes: %s\n", self.str)
-	fmt.Printf("\t}\n")
 
 }
 

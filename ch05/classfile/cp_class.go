@@ -1,7 +1,5 @@
 package classfile
 
-import "fmt"
-
 /*
 CONSTANT_Class_info{
 	u1 tag;
@@ -17,8 +15,6 @@ type ConstantClassInfo struct {
 func (self *ConstantClassInfo) readInfo(reader *ClassReader) {
 	self.nameIndex = reader.readUint16()
 
-	fmt.Printf("\t\tname_index:%d\n", self.nameIndex)
-	fmt.Printf("\t}\n")
 }
 
 func (self *ConstantClassInfo) Name() string {

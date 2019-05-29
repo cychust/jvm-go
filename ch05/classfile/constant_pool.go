@@ -7,11 +7,10 @@ type ConstantPool []ConstantInfo
 func readConstantPool(reader *ClassReader) ConstantPool {
 	cpCount := int(reader.readUint16())
 
-	fmt.Printf("cpCount: %d\n", cpCount)
+
 
 	cp := make([]ConstantInfo, cpCount)
 	for i := 1; i < cpCount; i++ {
-		fmt.Printf("\t%d\n", i)
 		cp[i] = readConstantInfo(reader, cp)
 
 		switch cp[i].(type) {

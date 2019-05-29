@@ -69,7 +69,6 @@ func (self *ClassFile) read(reader *ClassReader) {
 func (self *ClassFile) readAndCheckMagic(reader *ClassReader) {
 	magic := reader.readUint32() //magic
 
-	fmt.Printf("magic: %#X\n", magic)
 
 	if magic != 0xCAFEBABE {
 		panic("java.lang.ClassFormatError : magic!")
@@ -80,7 +79,6 @@ func (self *ClassFile) readAndCheckVersion(reader *ClassReader) {
 	self.minorVersion = reader.readUint16()
 	self.majorVersion = reader.readUint16()
 
-	fmt.Printf("minorVersion: %d\nmajorVersion: %d\n", self.minorVersion, self.majorVersion)
 
 	switch self.majorVersion {
 	case 45:
