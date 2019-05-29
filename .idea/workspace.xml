@@ -2,58 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="070b6d33-a6b3-4597-ae63-aba8891049d2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/base/branch_logic.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/dcmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/fcmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/if_acmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/if_icmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/ifcond.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/comparisons/lcmp.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/control/goto.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/control/lookupswitch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/control/tableswitch.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/conversions/d2x.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/conversions/f2x.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/conversions/i2x.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/conversions/l2x.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/extended/goto_w.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/extended/ifnull.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/extended/wide.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/factory.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/loads/fload.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/add.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/and.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/div.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/iinc.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/mul.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/neg.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/or.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/rem.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/sh.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/sub.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/math/xor.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/stack/dup.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/stack/pop.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/instructions/stack/swap.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ch05/interpreter.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ch05/REAMDME.md" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/REAMDME.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/class_file.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/class_file.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/constant_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/constant_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/constant_pool.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/constant_pool.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_class.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_class.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_member_ref.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_member_ref.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_name_and_type_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_name_and_type_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_numeric.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_numeric.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_string.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_string.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/cp_utf8.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/cp_utf8.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/classfile/member_info.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/classfile/member_info.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/instructions/constants/ipush.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/instructions/constants/ipush.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/instructions/constants/nop.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/instructions/constants/nop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/rtda/frame.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/rtda/frame.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/rtda/operand_stack.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/rtda/operand_stack.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ch05/rtda/thread.go" beforeDir="false" afterPath="$PROJECT_DIR$/ch05/rtda/thread.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +16,8 @@
         <entry file="file://$PROJECT_DIR$/ch05/REAMDME.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="-680">
-                <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
+              <first_editor relative-caret-position="479">
+                <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -292,7 +241,7 @@
     <frame x="0" y="28" width="1920" height="1052" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26783812" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.26783812" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -305,7 +254,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32939914" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32939914" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -615,8 +564,8 @@
     <entry file="file://$PROJECT_DIR$/ch05/REAMDME.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-680">
-            <caret line="141" column="30" selection-start-line="141" selection-start-column="30" selection-end-line="141" selection-end-column="30" />
+          <first_editor relative-caret-position="479">
+            <caret line="105" column="6" lean-forward="true" selection-start-line="105" selection-start-column="6" selection-end-line="105" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
